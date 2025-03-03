@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-const fontSize = 16;
+const fontSize = 12;
 const columns = canvas.width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
 
@@ -20,14 +20,14 @@ function drawMatrix() {
         const text = characters[Math.floor(Math.random() * characters.length)];
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.995) {
             drops[i] = 0;
         }
         drops[i]++;
     }
 }
 
-setInterval(drawMatrix, 50);
+setInterval(drawMatrix, 38);
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
