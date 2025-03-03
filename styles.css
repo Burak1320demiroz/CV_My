@@ -1,68 +1,143 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
     margin: 0;
     padding: 0;
- }
-             
-   body {
-     background: black;
-     font-family: 'Share Tech Mono',monospace;
-    }
- 
- 
- .navbar {
- background-color: #232;
- font-size:20px;
- 
- color: white;  
- position: fixed; 
- overflow: hidden;
- top: 10;  
- width: 84.5%;   
- z-index:+5;  
- }
- 
- 
- .jumbo-background{
-   background-color: #232;
-   color:#fff;
-    margin-top: 80px; 
-   padding: 16px;
-   
-   
- }
- .profile-img{
-   margin-top: 120px;
- 
- }
- 
- .btn-git{
-   background-color:#797D7F;  
-   color:white;
- }
- 
- .btn-freeCodeCamp{
-   background-color:#58D68D;
-   color:white;
- }
- 
- #workTitle{
-   color:grey;
- }
- 
- li {
- font-size: 20px;
-   
- }
- 
- #projectlink {
-   font-size:20px;
-   
- }
- canvas {
-     position:absolute;
- top:0;
- left:0;
- width:100%;
- height:100%;
- z-index:-5;
-   }
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+}
+
+/* Jumbotron Arka Plan */
+.jumbo-background {
+    background-color: #232; /* Yeşilimsi koyu gri */
+    color: #ffffff;
+    margin-top: 80px;
+    padding: 16px;
+}
+/* Navbar Şeffaflık */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Şeffaf siyah arka plan */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar Linkleri */
+.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: #58D68D !important; /* Hover rengi (Açık Yeşil) */
+}
+
+/* Navbar Sabitleme (opsiyonel) */
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Profil Resmi */
+.profile-img {
+    margin-top: 120px;
+    max-width: 120px;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #232; /* Yeşilimsi koyu gri */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Başlıklar */
+h1 {
+    font-size: 24px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Profil Tablosu */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table td {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.profile-table td:first-child {
+    font-weight: bold;
+    text-align: right;
+    width: 40%;
+    color: #ffffff;
+}
+
+/* Butonlar */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-git {
+    background-color: #797D7F; /* Gri */
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-freeCodeCamp {
+    background-color: #58D68D; /* Açık Yeşil */
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+/* Çalışma Başlıkları */
+#workTitle {
+    color: grey;
+}
+
+li {
+    font-size: 20px;
+}
+
+#projectlink {
+    font-size: 20px;
+}
+
+/* Arka Plan (Matrix Efekti) */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
