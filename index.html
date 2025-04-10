@@ -1,176 +1,343 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Burak Demiröz | CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand fw-bold animate__animated animate__fadeInLeft" href="#">Burak Demiröz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#profile"><i class="fas fa-user me-1"></i>Profile</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#about"><i class="fas fa-info-circle me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#experience"><i class="fas fa-briefcase me-1"></i>Experience</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#education"><i class="fas fa-graduation-cap me-1"></i>Education</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#certifications"><i class="fas fa-certificate me-1"></i>Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#skills"><i class="fas fa-code me-1"></i>Skills</a></li>
+                    <li class="nav-item"><a class="nav-link animate__animated animate__fadeInDown" href="#projects"><i class="fas fa-project-diagram me-1"></i>Projects</a></li>
                 </ul>
-                <div class="form-check form-switch ms-3">
-                    <div id="darkModeToggle" class="toggle-icon"></div>   
+                <div class="form-check form-switch ms-3 d-flex align-items-center animate__animated animate__fadeInRight">
+                    <i class="fas fa-moon me-2"></i>
+                    <div id="darkModeToggle" class="toggle-icon"></div>
+                    <i class="fas fa-sun ms-2"></i>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Profile Bölümü -->
-    <div class="container py-5" id="profile">
-        <div class="row">
-            <div class="col-md-9">
-                <h1>Profile</h1>
-                <hr class="star-bright">
-                <h3>
-                    Name: Burak Demiröz <br>
-                    Email: burakdemirozis16@gmail.com <br>
-                    Language : English (B1), <br>
-                </h3>
-                <hr class="star-bright">
-                <div class="social-buttons">
-                    <a href="https://github.com/Burak1320demiroz" target="_blank" class="btn-social btn-github">
-                        <i class="fa fa-github"></i> Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/burak-demiroz/" target="_blank" class="btn-social btn-linkedin">
-                        <i class="fa fa-linkedin"></i> Linkedin
-                    </a>
-                </div>                               
-            </div>
-            <div class="col-md-3 d-flex justify-content-center align-items-center">
-                <div class="profile-img-container">
-                    <img src="images/profile.jpg" class="img-fluid rounded profile-img" alt="Profile">
+    <!-- Profile Section -->
+    <section id="profile" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 animate__animated animate__fadeInLeft">
+                    <h1 class="display-4 fw-bold mb-4 section-title">Profile</h1>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-user-tie fa-lg me-3"></i>
+                        <h3 class="mb-0 text-primary">Burak Demiröz</h3>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-envelope fa-lg me-3"></i>
+                        <h5 class="mb-0 text-content">burakdemirozis16@gmail.com</h5>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-language fa-lg me-3"></i>
+                        <h5 class="mb-0 text-content">English (B1)</h5>
+                    </div>
+                    <div class="social-buttons">
+                        <a href="https://github.com/Burak1320demiroz" target="_blank" class="btn-social btn-github animate__animated animate__pulse animate__infinite animate__slower">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/burak-demiroz/" target="_blank" class="btn-social btn-linkedin animate__animated animate__pulse animate__infinite animate__slower">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
-            </div>            
+                <div class="col-lg-4 mt-4 mt-lg-0 animate__animated animate__fadeInRight">
+                    <div class="profile-img-container">
+                        <img src="images/profile.jpg" class="img-fluid rounded-circle profile-img shadow hover-rotate" alt="Profile">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- About Bölümü -->
-    <div class="container py-5" id="about">
-        <h1>About</h1>
-        <hr class="star-bright">
-        <p> 
-        I am a 4th year student in the Department of Mathematics at Bursa Uludağ University. I have knowledge in the fields of artificial intelligence and data science and have gained experience by working on various projects. I am particularly interested in and skilled in robotics, image processing and machine learning. I also continue to improve myself in cybersecurity and web security and work on current threats and security measures in this field. I am an individual who is prone to teamwork, innovative and competent in problem solving. I want to direct my career by continuously increasing my competence in software development, Python and web development. I continue to work to produce new technologies and solutions in the fields of AI, cybersecurity and Full-Stack Developer.
-        </p>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-section">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-5 fw-bold mb-4 section-title"><i class="fas fa-info-circle me-2"></i>About</h1>
+            <div class="card p-4 shadow-sm hover-scale">
+                <p class="lead text-content">
+                    I am a 4th year student in the Department of Mathematics at Bursa Uludağ University. I have knowledge in the fields of artificial intelligence and data science and have gained experience by working on various projects. I am particularly interested in and skilled in robotics, image processing and machine learning. I also continue to improve myself in cybersecurity and web security and work on current threats and security measures in this field. I am an individual who is prone to teamwork, innovative and competent in problem solving. I want to direct my career by continuously increasing my competence in software development, Python and web development. I continue to work to produce new technologies and solutions in the fields of AI, cybersecurity and Full-Stack Developer.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Experience Bölümü -->
-    <div class="container py-5" id="experience">
-        <h1>Experience</h1>
-        <hr class="star-bright">
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-4 section-title animate__animated animate__fadeIn"><i class="fas fa-briefcase me-2"></i>Experience</h1>
+            
+            <div class="card mb-4 shadow-sm hover-grow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="fas fa-robot me-2"></i>Bursa Uludag University Artificial Intelligence Community</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h4 class="d-flex align-items-center text-content">
+                            <i class="fas fa-car me-2 text-primary"></i>
+                            Talos Autonomous Vehicle Team
+                        </h4>
+                        <div class="ps-4">
+                            <div class="mb-3">
+                                <h5 class="d-flex align-items-center text-content">
+                                    <i class="fas fa-camera me-2 text-secondary"></i>
+                                    Image Processing Team Member (10.24 - Present)
+                                </h5>
+                                <p class="ms-4 text-content">I work on autonomous vehicle technologies such as traffic sign recognition, lane tracking, traffic light recognition and object recognition.</p>
+                            </div>
+                            <div class="mb-3">
+                                <h5 class="d-flex align-items-center text-content">
+                                    <i class="fas fa-project-diagram me-2 text-secondary"></i>
+                                    Algorithm Team Member (10.23 - 09.24)
+                                </h5>
+                                <p class="ms-4 text-content">I work on algorithms for route planning, motion planning, obstacle avoidance, parking and passenger pick-up. I also work on algorithms for filtering lidar data, control and obstacle detection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h5 class="d-flex align-items-center text-content">
+                            <i class="fas fa-tasks me-2 text-primary"></i>
+                            Project Coordination Team Member (10.24 - Present)
+                        </h5>
+                        <p class="ms-4 text-content">As a coordination team member of the project, I am responsible for planning and maintaining deep learning, machine learning, Python development and development training.</p>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h5 class="d-flex align-items-center text-content">
+                            <i class="fas fa-shield-alt me-2 text-primary"></i>
+                            Cyber Security Team Member (12.24 - Present)
+                        </h5>
+                        <p class="ms-4 text-content">I am preparing for the HackMasters competition by working on web security, cryptology and artificial intelligence security. During my preparation, I am solving Portswigger labs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm hover-grow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="fas fa-industry me-2"></i>Mechanical Technical Draftsman</h3>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h5 class="d-flex align-items-center text-content">
+                            <i class="fas fa-building me-2 text-secondary"></i>
+                            Matas Food Machinery Intern (06.19 - 09.19)
+                        </h5>
+                        <p class="ms-4 text-content">During my time as a technical draftsman, I worked on every stage of the production cycle. I participated in the R&D department, addressing deficiencies in machines, and worked hands-on with machines such as lathes, milling machines, column drills, and press brakes. Additionally, I designed my own kitchen robot and prepared technical drawings using AutoCAD and Autodesk Inventor.</p>
+                    </div>
+                    <div class="mb-3">
+                        <h5 class="d-flex align-items-center text-content">
+                            <i class="fas fa-tools me-2 text-secondary"></i>
+                            Penmak Machinery Intern (06.18 - 09.18)
+                        </h5>
+                        <p class="ms-4 text-content">I worked in machine manufacturing on-site, gaining hands-on experience with various machinery. My responsibilities included operating column drills, lathes, and milling machines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Bursa Uludag University Artificial Intelligence Community</h3>
-        <ul>
-            <li>
-                <h5>Talos Autonomous Vehicle Team</h5>
-                <ul>
-                    <li>
-                        <h6>Image Processing Team Member (10.24 - Present)</h6>
-                        <p>I work on autonomous vehicle technologies such as traffic sign recognition, lane tracking, traffic light recognition and object recognition.</p>
-                    </li>
-                    <li>
-                        <h6>Algorithm Team Member (10.23 - 09.24)</h6>
-                        <p>I work on algorithms for route planning, motion planning, obstacle avoidance, parking and passenger pick-up. I also work on algorithms for filtering lidar data, control and obstacle detection.</p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h5>Project Coordination Team Member (10.24 - Present)</h5>
-                <p>As a coordination team member of the project, I am responsible for planning and maintaining deep learning, machine learning, Python development and development training.</p>
-            </li>
-            <li>
-                <h5>Cyber Security Team Member (12.24 - Present)</h5>
-                <p>I am preparing for the HackMasters competition by working on web security, cryptology and artificial intelligence security. During my preparation, I am solving Portswigger labs.</p>
-            </li>
-        </ul>
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-section">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-5 fw-bold mb-4 section-title"><i class="fas fa-graduation-cap me-2"></i>Education</h1>
+            <div class="card shadow-sm hover-scale">
+                <div class="card-body">
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-university fa-lg me-3 mt-1 text-primary"></i>
+                        <div>
+                            <h4 class="text-content">Bursa Uludağ University</h4>
+                            <p class="mb-1 text-content">Department of Mathematics [2021-2026]</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-school fa-lg me-3 mt-1 text-primary"></i>
+                        <div>
+                            <h4 class="text-content">Bursa Tophane Mesleki ve Teknik Anadolu Lisesi</h4>
+                            <p class="mb-0 text-content">Department of Machinery / Mechanical Technical Draftsman [2016-2020]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Mechanical Technical Draftsman</h3>
-        <ul>
-            <li>
-                <h5>Matas Food Machinery Intern (06.19 - 09.19)</h5>
-                <p>During my time as a technical draftsman, I worked on every stage of the production cycle. I participated in the R&D department, addressing deficiencies in machines, and worked hands-on with machines such as lathes, milling machines, column drills, and press brakes. Additionally, I designed my own kitchen robot and prepared technical drawings using AutoCAD and Autodesk Inventor.</p>
-            </li>
-            <li>
-                <h5>Penmak Machinery Intern (06.18 - 09.18)</h5>
-                <p>I worked in machine manufacturing on-site, gaining hands-on experience with various machinery. My responsibilities included operating column drills, lathes, and milling machines.</p>
-            </li>
-        </ul>
-        <br>
-    </div>
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-5 fw-bold mb-4 section-title"><i class="fas fa-certificate me-2"></i>Certifications</h1>
+            <div class="card shadow-sm hover-scale">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center text-content">
+                            <i class="fas fa-award me-3 text-warning"></i>
+                            Samsung Innovation Campus - Python Development
+                        </li>
+                        <li class="mb-2 d-flex align-items-center text-content">
+                            <i class="fas fa-award me-3 text-warning"></i>
+                            Hackerrank - Basic Python Development
+                        </li>
+                        <li class="mb-2 d-flex align-items-center text-content">
+                            <i class="fas fa-award me-3 text-warning"></i>
+                            Fatih Sultan Mehmet Foundation University - Basic and Advanced Cyber Security Training
+                        </li>
+                        <li class="mb-0 d-flex align-items-center text-content">
+                            <i class="fas fa-award me-3 text-warning"></i>
+                            Robotaxi Passenger Autonomous Vehicle Competition - 2024 TEKNOFEST ACHIEVEMENT CERTIFICATE
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Education Bölümü -->
-    <div class="container py-5" id="education">
-        <h1>Education</h1>
-        <h5>Bursa Uludağ University - Department of Mathematics [2021-2026]</h5>
-        <h5>Bursa Tophane Mesleki ve Teknik Anadolu Lisesi - Department of Machinery / Mechanical Technical Draftsman [2016-2020]</h5>
-        <hr class="star-bright">
-        <!-- İçerik buraya gelecek -->
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-section">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-4 section-title animate__animated animate__fadeIn"><i class="fas fa-code me-2"></i>Skills</h1>
+            
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Cyber Security</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Web Security (Burp Suite)</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Cryptology</li>
+                                <li class="mb-0 text-content"><i class="fas fa-check-circle text-success me-2"></i>AI Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-brain me-2"></i>Artificial Intelligence</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Python Development</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Machine Learning</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Deep Learning</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Image Processing</li>
+                                <li class="mb-0 text-content"><i class="fas fa-check-circle text-success me-2"></i>Algorithm Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInRight">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-laptop-code me-2"></i>Full Stack Development</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Web Development (html, css, js)</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Node.js</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Vue.js</li>
+                                <li class="mb-0 text-content"><i class="fas fa-check-circle text-success me-2"></i>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInLeft">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-calculator me-2"></i>Mathematics</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Probability & Statistics</li>
+                                <li class="mb-0 text-content"><i class="fas fa-check-circle text-success me-2"></i>Maple</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-drafting-compass me-2"></i>Mechanical Technical Draftsman</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>AutoCAD</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Autodesk Inventor</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>NX Unigraphics</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Solidworks</li>
+                                <li class="mb-0 text-content"><i class="fas fa-check-circle text-success me-2"></i>3D Printer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 animate__animated animate__fadeInRight">
+                    <div class="card h-100 shadow-sm hover-grow">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-robot me-2"></i>Other Skills</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>ROS Noetic and ROS 2</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Robotix</li>
+                                <li class="mb-2 text-content"><i class="fas fa-check-circle text-success me-2"></i>Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Certifications Bölümü -->
-    <div class="container py-5" id="skill">
-        <h1>Certifications</h1>
-        <h5>Samsung Innovation Campus - Python Development</h5>
-        <h5>Hackerrank - Basic Python Development</h5>
-        <h5>Fatih Sultan Mehmet Foundation University - Basic and Advanced Cyber ​​Security Training</h5>
-        <h5>Robotaxi-Passenger Autonomous Vehicle Competition - 2024 TEKNOFEST ACHIEVEMENT CERTIFICATE</h5>
-        <hr class="star-bright">
-        <!-- İçerik buraya gelecek -->
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container animate__animated animate__fadeInUp">
+            <h1 class="display-5 fw-bold mb-4 section-title"><i class="fas fa-project-diagram me-2"></i>Projects</h1>
+            <div class="card shadow-sm hover-scale">
+                <div class="card-body">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-leaf fa-lg me-3 mt-1 text-success"></i>
+                        <div>
+                            <h4 class="text-content">EcoIrrigate</h4>
+                            <p class="mb-0 text-content">Python Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Skill Bölümü -->
-    <div class="container py-5" id="skill">
-        <h1>Skill</h1>
-        <h3></h3>
-        <h5>Python Development</h5>
-        <h5>Machine Learning</h5>
-        <h5>Deep Learning</h5>
-        <h5>Algorithm Design</h5>
-        <h5>Image Processing</h5>
-        <h5>Robotix</h5>
-        <h5>Ros Noetic and Ros 2</h5>
-        <h5>Docker</h5>
-        <hr>
-        <h5>Web Seculity - Burp Suite</h5>
-        <h5>Web Development (html, css, js)</h5>
-        <h5>Node.js</h5>
-        <h5>Vue.js</h5>
-        <h5>SQL</h5>
-        <h5>Cryptology</h5>
-        <hr>
-        <h5>Probability and Statistics</h5>
-        <h5>Maple</h5>
-        <hr>
-        <h5>AutoCAD</h5>
-        <h5>Autodesk Inventor</h5>
-        <h5>NX Unigraphics</h5>
-        <h5>Solidworks</h5>
-        <hr class="star-bright">
-        <!-- İçerik buraya gelecek -->
-    </div>
-
-    <!-- Project Bölümü -->
-    <div class="container py-5" id="project">
-        <h1>Project</h1>
-        <h5>EcoIrrigate - Python Development</h5>
-        <!-- İçerik buraya gelecek -->
-    </div>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0 animate__animated animate__fadeIn">© 2024 Burak Demiröz. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap 5 JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
